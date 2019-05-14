@@ -12,7 +12,6 @@
                     $content[9] = 'deleted';                    
                     $files[$keys] = implode(" | ", $content); 
                 }
-                  
             }                     
     }               
     
