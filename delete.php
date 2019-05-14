@@ -9,14 +9,12 @@
     
             foreach ($deletefiles as $checkbox){
                 if ($checkbox === $content[7]){
-                    $content[9] = 'deleted';
-                    $files[$key] = implode(" | ", $content); 
+                    $content[9] = 'deleted';                    
+                    $files[$keys] = implode(" | ", $content); 
                 }
                   
             }                     
     }               
     
-    $files = implode("\n", $files);
-    file_put_contents('data.txt', $files);
-
-   
+    $files = implode("\n", $files) . "\n";
+    file_put_contents('data.txt', $files); 
